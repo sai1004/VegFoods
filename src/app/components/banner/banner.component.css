@@ -17,14 +17,12 @@ h1 {
   font-family: "Amatic SC", cursive;
   font-size: -webkit-xxx-large;
   font-weight: 600;
-  
   padding: 0;
   margin: 0;
 }
 
 p {
-    color: white;
-   
+  color: white;
 }
 button {
   color: white;

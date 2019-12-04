@@ -1,0 +1,17 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.all-part{
+  text-align:center;
+}
+.circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: #e4b2d6;
+}
+
+.fa_custom {
+  color: white;
+}
