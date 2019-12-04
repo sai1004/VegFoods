@@ -1,0 +1,47 @@
+.bg-img {
+  background: linear-gradient(rgba(5, 5, 5, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../../assets/images/bg_2.jpg);
+  background-repeat: no-repeat;
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+}
+
+.content {
+  transform: translateY(350px);
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: -webkit-xxx-large;
+  font-weight: 600;
+  
+  padding: 0;
+  margin: 0;
+}
+
+p {
+    color: white;
+   
+}
+button {
+  color: white;
+  background-color: #82ae46;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 900;
+  width: 140px;
+  height: 45px;
+}
+
+button:hover {
+  color: #82ae46;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #82ae46;
+  width: 140px;
+  height: 45px;
+  outline: none;
+}
