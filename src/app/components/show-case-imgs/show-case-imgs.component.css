@@ -1,0 +1,29 @@
+.img-exist {
+ 
+  height: auto;
+  max-width: 360px;
+}
+.no-img {
+  height: 200px;
+  margin-top: 10px;
+}
+
+button {
+  color: white;
+  background-color: #82ae46;
+  border-radius: 20px;
+  font-size: medium;
+  font-weight: 900;
+  width: 140px;
+  height: 45px;
+}
+
+button:hover {
+  color: #82ae46;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 2px solid #82ae46;
+  width: 140px;
+  height: 45px;
+  outline: none;
+}

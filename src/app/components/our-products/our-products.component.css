@@ -1,0 +1,13 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+mat-card {
+  height: 330px;
+  width: 285px;
+  margin: 10px;
+}
+.product-img {
+  height: 202px;
+  width:253px;
+}

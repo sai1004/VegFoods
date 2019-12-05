@@ -1,1 +1,28 @@
-<p>our-products works!</p>
+<main fxLayoutAlign="center">
+  <section>
+    <div class="content" Align="center">
+      <h5>Featured Products</h5>
+      <h2>Our Products</h2>
+      <p>
+        Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia
+      </p>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" Align="center">
+      <ng-container *ngFor="let item of items">
+        <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="100">
+          <mat-card>
+            <div>
+              <img src="{{ item.img }}" alt="" class="product-img" />
+            </div>
+            <div class="content">
+              <h4>{{ item.name }}</h4>
+              <p>{{ item.price | currency }}</p>
+            </div>
+          </mat-card>
+        </div>
+      </ng-container>
+    </div>
+  </section>
+</main>
