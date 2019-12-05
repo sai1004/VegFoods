@@ -1,5 +1,31 @@
-section {
+main {
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #f7f6f2;
+}
+
+input {
+  height: 45px;
+  width: 350px;
+}
+
+button {
+  height: 48px;
+  width: 15vh;
+  background-color: #82ae46;
+  color: white;
+  border-radius: unset;
+}
+h4 {
+  font-weight: 400;
+  color: #000000;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: xx-large;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
 }
