@@ -21,6 +21,7 @@ import { CartComponent } from './pages/cart/cart.component';
 import { CheckOutComponent } from './pages/check-out/check-out.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ShowCaseComponent } from './components/show-case/show-case.component';
+import { ShowCaseImgsComponent } from './components/show-case-imgs/show-case-imgs.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ShowCaseComponent } from './components/show-case/show-case.component';
     CartComponent,
     CheckOutComponent,
     ShopComponent,
-    ShowCaseComponent
+    ShowCaseComponent,
+    ShowCaseImgsComponent
   ],
   imports: [
     BrowserModule,

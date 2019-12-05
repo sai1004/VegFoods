@@ -4,6 +4,8 @@ main {
 }
 .all-part{
   text-align:center;
+  height: 230px;
+  width: 230px;
 }
 .circle {
   border-radius: 50%;
