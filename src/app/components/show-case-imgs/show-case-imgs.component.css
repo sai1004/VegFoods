@@ -1,11 +1,21 @@
 .img-exist {
- 
   height: auto;
   max-width: 360px;
 }
 .no-img {
   height: 200px;
   margin-top: 10px;
+}
+
+.no-img h4 {
+  color: #82ae46;
+  font-family: cursive;
+  font-size: x-large;
+}
+
+.no-img p{
+  font-size: large;
+  color: gray;
 }
 
 button {
