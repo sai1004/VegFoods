@@ -13,7 +13,7 @@
   font-size: x-large;
 }
 
-.no-img p{
+.no-img p {
   font-size: large;
   color: gray;
 }
@@ -36,4 +36,10 @@ button:hover {
   width: 140px;
   height: 45px;
   outline: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .img-exist {
+    width: 280px;
+  }
 }

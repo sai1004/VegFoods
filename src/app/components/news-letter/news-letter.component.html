@@ -1,6 +1,6 @@
 <main fxLayoutAlign="center">
   <section>
-    <div fxLayout="row wrap" fxLayoutAlign="center center">
+    <div fxLayout="row wrap" fxLayoutAlign="space-around center">
       <div fxFlex="50" fxFlex.sm="100" fxFlex.xs="100">
         <h4>
           Subcribe to our Newsletter
@@ -11,8 +11,13 @@
       <div fxFlex="50" fxFlex.sm="100" fxFlex.xs="100">
         <form>
           <div fxLayout="row">
-            <input type="email" placeholder="Enter Email" required />
-            <button mat-raised-button>Subscribe</button>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              required
+              fxFlex="100"
+            />
+            <button mat-raised-button fxFlex="100">Subscribe</button>
           </div>
         </form>
       </div>

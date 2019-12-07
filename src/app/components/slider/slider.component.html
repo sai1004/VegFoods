@@ -1,0 +1,35 @@
+<div class="slider-container">
+  <div fxLayoutAlign="space-around center">
+    <div fxFlex="10" fxHide.sm fxHide.xs>
+      <img
+        src="../../../assets/icons/arrow-left.svg"
+        alt="arrow-left"
+        height="100px"
+        class="arrow"
+        (click)="onClickLeft()"
+      />
+    </div>
+
+    <div
+      class="slides"
+      #slides
+      fxFlex="80"
+      fxFlex.sm="100"
+      fxFlex.xs="100"
+      fxFlex.md="50"
+      fxFlex.lg="100"
+    >
+      <ng-content select="[appSliderItem]" #sliderItem></ng-content>
+    </div>
+
+    <div fxFlex="10" fxHide.sm fxHide.xs>
+      <img
+        src="../../../assets/icons/arrow-right.svg"
+        alt="arrow-right"
+        height="100px"
+        class="arrow"
+        (click)="onClickRight()"
+      />
+    </div>
+  </div>
+</div>

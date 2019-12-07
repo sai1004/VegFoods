@@ -22,6 +22,8 @@ import { CheckOutComponent } from './pages/check-out/check-out.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ShowCaseComponent } from './components/show-case/show-case.component';
 import { ShowCaseImgsComponent } from './components/show-case-imgs/show-case-imgs.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { SliderItemDirective } from "./components/slider/slider-item.directive"
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ShowCaseImgsComponent } from './components/show-case-imgs/show-case-img
     CheckOutComponent,
     ShopComponent,
     ShowCaseComponent,
-    ShowCaseImgsComponent
+    ShowCaseImgsComponent,
+    SliderComponent,SliderItemDirective
+     
   ],
   imports: [
     BrowserModule,
