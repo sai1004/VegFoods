@@ -1,11 +1,11 @@
-/* section {
+section {
   position: fixed;
   right: 0;
   left: 0;
   width: 100%;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
   z-index: 9999;
-} */
+}
 
 .example-fill-remaining-space {
 
@@ -46,4 +46,3 @@ mat-sidenav {
 
   background-color: #a7cb00;
 }
- 

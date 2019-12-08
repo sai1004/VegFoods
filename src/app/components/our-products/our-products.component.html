@@ -1,6 +1,6 @@
 <main fxLayoutAlign="space-around center">
   <section>
-    <div class="content" Align="center">
+    <div class="content" Align="center" data-aos="fade-up">
       <!-- <h5>Featured Products</h5> -->
       <h2>Our Products</h2>
       <p>
@@ -9,10 +9,10 @@
       </p>
     </div>
 
-    <div fxLayout="row wrap"   Align="center">
+    <div fxLayout="row wrap"   Align="center" >
       <ng-container *ngFor="let item of items">
-        <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50">
-          <mat-card>
+        <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" >
+          <mat-card data-aos="fade-up">
             <div class="image-box">
               <img src="{{ item.img }}" alt="product-img" class="product-img" />
             </div>
