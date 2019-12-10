@@ -18,28 +18,27 @@ section {
 
 .fa-chevron-up {
   color: white;
-  font-size: 50px;
-
+  font-size: 30px;
   animation: bounce 1s infinite alternate;
   -webkit-animation: bounce 1s infinite alternate;
 }
 
 @keyframes bounce {
   from {
-    transform: translateY(10px);
+    transform: translateY(25px);
   }
 
   to {
-    transform: translateY(-8px);
+    transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes bounce {
   from {
-    transform: translateY(10px);
+    transform: translateY(25px);
   }
 
   to {
-    transform: translateY(-8px);
+    transform: translateY(0px);
   }
 }
