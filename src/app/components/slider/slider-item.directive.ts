@@ -1,10 +1,8 @@
-import { Directive } from '@angular/core';
+import { Directive } from "@angular/core";
 
 @Directive({
-  selector: '[appSliderItem]'
+  selector: "[appSliderItem]"
 })
 export class SliderItemDirective {
-
-  constructor() { }
-
+  constructor() {}
 }

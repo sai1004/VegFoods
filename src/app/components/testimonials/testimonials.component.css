@@ -23,9 +23,8 @@ p {
   border-radius: 10px;
 }
 
-.example-card:hover{
+.example-card:hover {
   box-shadow: -2px 3px 21px -5px rgba(0, 0, 0, 0.75);
-
 }
 
 [appSliderItem] {
@@ -34,7 +33,7 @@ p {
 
 section {
   margin-bottom: 100px;
-  max-width: 1300px;
+  max-width: 1250px;
 }
 
 .testimonials {
