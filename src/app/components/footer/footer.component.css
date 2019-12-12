@@ -12,4 +12,5 @@ section {
   left: 49%;
   right: 49%;
   top: -33px;
+  cursor: pointer;
 }
