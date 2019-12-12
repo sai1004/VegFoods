@@ -3,11 +3,46 @@ section {
   right: 0;
   left: 0;
   width: 100%;
-  box-shadow: 0 0 8px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
   z-index: 9999;
 }
+
 .example-fill-remaining-space {
-  /* This fills the remaining space, by using flexbox. 
-       Every toolbar row uses a flexbox row layout. */
+
   flex: 1 1 auto;
+}
+
+/* .mat-drawer-container {
+  display: none !important;
+  overflow: hidden;
+} */
+
+h3 {
+  font-size: 26px !important;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+a:hover {
+  border-bottom: solid 2px;
+  border-bottom-color: #a7cb00;
+}
+
+mat-divider {
+  color: white;
+}
+
+mat-sidenav-container {
+  max-height: 100vh;
+  width: 100%;
+}
+
+mat-sidenav {
+  max-height: 30vh;
+  width: 100%;
+
+  background-color: #a7cb00;
 }

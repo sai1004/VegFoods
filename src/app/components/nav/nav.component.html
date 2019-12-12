@@ -1,10 +1,59 @@
 <section>
-  <mat-toolbar>
-    <span> Veg Foods </span>
-
-    <!-- This fills the remaining space of the current row -->
+  <mat-toolbar
+    [ngStyle.sm]="{ 'background-color': '#a7cb00' }"
+    [ngStyle.xs]="{ 'background-color': '#a7cb00' }"
+  >
+    <span class="logo">
+      <h3>VegFoods</h3>
+    </span>
     <span class="example-fill-remaining-space"></span>
 
-    <span>Right Aligned Text</span>
+    <div fxShow="true" fxHide.gt-sm="true" class="menu-icon">
+      <button
+        mat-icon-button
+        (click)="sidenav.toggle()"
+        [ngStyle.sm]="{ 'background-color': '#a7cb00' }"
+        [ngStyle.xs]="{ 'background-color': '#a7cb00' }"
+      >
+        <mat-icon style="color: white">menu</mat-icon>
+      </button>
+    </div>
+
+    <span class="nav-options" fxHide.sm fxHide.xs>
+      <a mat-button routerLink="/"> HOME </a>
+      <a mat-button routerLink="/max-about"> ABOUT </a>
+      <a mat-button routerLink="/max-work"> BLOG </a>
+      <a mat-button routerLink="/max-service"> CONTACT </a>
+      <a mat-button routerLink="/max-pages"> cart </a>
+
+      <a mat-button routerLink="/max-blog"> profile </a>
+      <a mat-button routerLink="/max-contact"> </a>
+    </span>
   </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button routerLink="/"> HOME </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button routerLink="/max-about"> ABOUT </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button routerLink="/max-work"> BLOG </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button routerLink="/max-service"> CONTACT </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button routerLink="/max-pages"> cart </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button routerLink="/max-blog"> profile </a>
+        <mat-divider></mat-divider>
+
+        <a mat-button> CONTACT </a>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
 </section>

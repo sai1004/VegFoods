@@ -13,4 +13,33 @@ section {
   right: 49%;
   top: -33px;
   cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-chevron-up {
+  color: white;
+  font-size: 30px;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(25px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
 }

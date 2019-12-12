@@ -6,16 +6,17 @@ main {
 
 input {
   height: 45px;
-  /* width: 350px; */
+  width: 32vw;
 }
 
 button {
   height: 48px;
-  /* width: 15vh; */
+  width: 20vh;
   background-color: #82ae46;
   color: white;
   border-radius: unset;
 }
+
 h4 {
   font-weight: 400;
   color: #000000;
