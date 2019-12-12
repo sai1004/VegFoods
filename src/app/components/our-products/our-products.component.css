@@ -2,25 +2,35 @@ main {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+section {
+  max-width: 1500px;
+}
 mat-card {
   height: 330px;
   width: 285px;
   margin: 10px;
+}
+
+mat-card:hover {
+  box-shadow: 0px 2px 10px 2px rgb(240, 234, 234);
+}
+
+mat-icon {
+  color: white;
 }
 .product-img {
   height: 202px;
   width: 253px;
 }
 
-.image-box {
-  max-width: 100%;
+.img-box {
   transition: all 0.3s;
   display: block;
   width: 100%;
   height: auto;
   transform: scale(1);
 }
-.image-box:hover img {
+.img-box:hover img {
   transform: scale(1.1);
 }
 
@@ -33,14 +43,38 @@ mat-card {
 }
 
 .content p {
-
   font-size: large;
   color: gray;
-
 }
 mat-card-title {
   line-height: 50px;
+  font-size: medium;
 }
 
+.overlay {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
+mat-card:hover .overlay {
+  opacity: 1;
+}
 
+button {
+  margin: 1px;
+  background-color: #82ae46;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 5px 0;
+}
+i {
+  color: white;
+}

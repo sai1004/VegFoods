@@ -1,7 +1,6 @@
-<main fxLayoutAlign="space-around center">
+<main fxLayoutAlign="center">
   <section>
     <div class="content" Align="center" data-aos="fade-up">
-      <!-- <h5>Featured Products</h5> -->
       <h2>Our Products</h2>
       <p>
         Far far away, behind the word mountains, far from the countries Vokalia
@@ -9,20 +8,23 @@
       </p>
     </div>
 
-    <div fxLayout="row wrap"   Align="center" >
+    <div fxLayout="row wrap" Align="center" fxLayoutAlign="space-around center">
       <ng-container *ngFor="let item of items">
-        <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" >
+        <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50">
           <mat-card data-aos="fade-up">
-            <div class="image-box">
+            <div class="img-box">
               <img src="{{ item.img }}" alt="product-img" class="product-img" />
             </div>
             <div class="content">
               <mat-card-title>{{ item.name }}</mat-card-title>
               <mat-card-subtitle>{{ item.price | currency }}</mat-card-subtitle>
-              <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-              </mat-card-actions>
+              <div class="overlay" >
+                <button><mat-icon>menu</mat-icon></button>
+                <button>
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button><i class="far fa-heart"></i></button>
+              </div>
             </div>
           </mat-card>
         </div>

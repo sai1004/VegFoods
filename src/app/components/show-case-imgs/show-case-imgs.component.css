@@ -1,5 +1,14 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+section {
+  max-width: 1300px;
+}
+
 .img-exist {
-  height: auto;
+  height: 250px;
   max-width: 360px;
 }
 .no-img {
@@ -41,5 +50,7 @@ button:hover {
 @media only screen and (max-width: 414px) {
   .img-exist {
     width: 280px;
+    height: auto;
+
   }
 }

@@ -15,44 +15,44 @@ export class OurProductsComponent implements OnInit {
     },
     {
       img: "../../../assets/images/product-2.jpg",
-      price: 80,
-      name: "BELL PEPPER",
+      price: 120,
+      name: "STRAWBERRY",
       discount: 30
     },
     {
       img: "../../../assets/images/product-3.jpg",
-      price: 80,
-      name: "BELL PEPPER",
+      price: 120,
+      name: "GREEN BEANS",
       discount: 30
     },
     {
       img: "../../../assets/images/product-4.jpg",
-      price: 80,
-      name: "BELL PEPPER",
+      price: 120,
+      name: "PURPLE CABBAGE",
       discount: 30
     },
     {
       img: "../../../assets/images/product-5.jpg",
       price: 80,
-      name: "BELL PEPPER",
+      name: "TOMATOE",
       discount: 30
     },
     {
       img: "../../../assets/images/product-6.jpg",
       price: 80,
-      name: "BELL PEPPER",
+      name: "BROCOLLI",
       discount: 30
     },
     {
       img: "../../../assets/images/product-7.jpg",
       price: 80,
-      name: "BELL PEPPER",
+      name: " CARROTS",
       discount: 30
     },
     {
       img: "../../../assets/images/product-8.jpg",
       price: 80,
-      name: "BELL PEPPER",
+      name: "FRUIT JUICE",
       discount: 30
     }
   ];
