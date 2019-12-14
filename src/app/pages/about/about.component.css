@@ -1,19 +1,19 @@
 p {
-    font-family: Lato;
-  }
-  
-  .example-card {
-    max-width: 400px;
-  }
-  
-  [appSliderItem] {
-    flex-shrink: 0;
-  }
-  
-  section{
-      margin-top: 100px;
-  }
+  font-family: Lato;
+}
 
-  .testimonials{
-      margin: 10px;
-  }
+.example-card {
+  max-width: 400px;
+}
+
+[appSliderItem] {
+  flex-shrink: 0;
+}
+
+section {
+  margin-top: 100px;
+}
+
+.testimonials {
+  margin: 10px;
+}
