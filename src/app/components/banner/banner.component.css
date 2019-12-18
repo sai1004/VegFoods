@@ -2,13 +2,19 @@
   background: linear-gradient(rgba(5, 5, 5, 0.2), rgba(0, 0, 0, 0.2)),
     url(../../../assets/images/bg_2.jpg);
   background-repeat: no-repeat;
-  height: 800px;
-  width: 100%;
+  background-position: center;
   background-size: cover;
+  position: relative;
+  height: 80vh;
 }
 
 .content {
-  transform: translateY(350px);
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  right: 30%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
