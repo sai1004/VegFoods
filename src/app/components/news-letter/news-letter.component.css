@@ -4,17 +4,18 @@ main {
   background-color: #f7f6f2;
 }
 
-input {
+.email {
   height: 45px;
-  width: 32vw;
+  width: 50vh;
+  border: 1px solid gray;
+
 }
 
-button {
+.btn {
   height: 48px;
-  width: 20vh;
   background-color: #82ae46;
   color: white;
-  border-radius: unset;
+ 
 }
 
 h4 {
