@@ -9,10 +9,26 @@
       </div>
 
       <div class="subscribe">
-        <form>
-          <div fxLayout="row wrap"  fxLayoutAlign="center center">
-            <input type="email" class="email" placeholder="Enter Email" required fxFlex='50' fxFlex.sm='100' fxFlex.xs='100'/>
-            <button mat-button class="btn" fxFlex='40' fxFlex.sm='100' fxFlex.xs='100'>Subscribe</button>
+        <form #ngForm="myForm">
+          <div fxLayout="row wrap" fxLayoutAlign="center center">
+            <input
+              type="email"
+              class="email"
+              placeholder="Enter Email"
+              required
+              fxFlex="50"
+              fxFlex.sm="100"
+              fxFlex.xs="100"
+            />
+            <button
+              mat-button
+              class="btn"
+              fxFlex="40"
+              fxFlex.sm="100"
+              fxFlex.xs="100"
+            >
+              Subscribe
+            </button>
           </div>
         </form>
       </div>
