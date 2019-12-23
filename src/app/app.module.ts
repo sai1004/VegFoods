@@ -23,7 +23,8 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { ShowCaseComponent } from './components/show-case/show-case.component';
 import { ShowCaseImgsComponent } from './components/show-case-imgs/show-case-imgs.component';
 import { SliderComponent } from './components/slider/slider.component';
-import { SliderItemDirective } from "./components/slider/slider-item.directive"
+import { SliderItemDirective } from "./components/slider/slider-item.directive";
+import { SingleProductPageComponent } from './pages/single-product-page/single-product-page.component'
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { SliderItemDirective } from "./components/slider/slider-item.directive"
     ShopComponent,
     ShowCaseComponent,
     ShowCaseImgsComponent,
-    SliderComponent,SliderItemDirective
+    SliderComponent,SliderItemDirective, SingleProductPageComponent
      
   ],
   imports: [
