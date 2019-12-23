@@ -1,18 +1,34 @@
 <section>
-  <mat-toolbar>
-    <span class="logo">
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <!-- logo -->
+    <div fxFlex="25" Align="center">
       <h3>VegFoods</h3>
-    </span>
-    <span class="example-fill-remaining-space"></span>
-
-    <div fxShow="true" fxHide.gt-sm="true" class="menu-icon">
-      <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon style="color: white">menu</mat-icon>
-      </button>
     </div>
-  </mat-toolbar>
-
-  <mat-sidenav-container fxFlexFill>
-    <mat-sidenav #sidenav opened="false" fxHide.gt-sm="true"> </mat-sidenav>
-  </mat-sidenav-container>
+    <!-- empty space -->
+    <div fxFlex="15"></div>
+    <!-- md screen -->
+    <div fxFlex="60" fxHide.lt-md>
+      <div fxLayoutAlign="space-evenly center">
+        <a routerLink="/">HOME</a>
+        <a routerLink="/shop">SHOP</a>
+        <a routerLink="/about">ABOUT</a>
+        <a routerLink="/blog">BLOG</a>
+        <a routerLink="/contact">CONTACT</a>
+        <div>
+          <span routerLink="/cart"><i class="fas fa-shopping-cart"></i></span>
+          <span> [0] </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- small screen -->
+  <div fxHide.gt-sm class="small-screen">
+    <div fxLayout="column" fxLayoutAlign="space-evenly center">
+      <a href="">HOME</a>
+      <a href="">SHOPE</a>
+      <a href="">ABOUT</a>
+      <a href="">BLOG</a>
+      <a href="">CONTACT</a>
+    </div>
+  </div>
 </section>
