@@ -9,15 +9,15 @@
     </div>
 
     <div fxLayout="row wrap" Align="center" fxLayoutAlign="space-around center">
-      <ng-container *ngFor="let item of items">
+      <ng-container *ngFor="let item of products">
         <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50">
           <mat-card data-aos="fade-up">
             <div class="img-box">
-              <img src="{{ item.img }}" alt="product-img" class="product-img" />
+              <img src="{{ item.p_img }}" alt="product-img" class="product-img" />
             </div>
             <div class="content">
-              <mat-card-title>{{ item.name }}</mat-card-title>
-              <mat-card-subtitle>{{ item.price | currency }}</mat-card-subtitle>
+              <mat-card-title>{{ item.p_name }}</mat-card-title>
+              <mat-card-subtitle>{{ item.p_price | currency }}</mat-card-subtitle>
               <div class="overlay">
                 <button><mat-icon>menu</mat-icon></button>
                 <button>
