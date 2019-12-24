@@ -27,6 +27,7 @@ import { SliderItemDirective } from "./components/slider/slider-item.directive";
 import { SingleProductPageComponent } from "./pages/single-product-page/single-product-page.component";
 
 import { OurProductsService } from "./components/our-products/our-products.service";
+import { CartService } from './pages/cart/cart.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,7 @@ import { OurProductsService } from "./components/our-products/our-products.servi
     BrowserAnimationsModule,
     SharedModule
   ],
-  providers: [OurProductsService],
+  providers: [OurProductsService,CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

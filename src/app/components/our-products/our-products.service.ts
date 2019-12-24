@@ -5,6 +5,7 @@ import { Injectable } from "@angular/core";
 })
 export class OurProductsService {
   constructor() {}
+  cartItems: any[] = []
 
   getproducts() {
     return [
@@ -65,5 +66,15 @@ export class OurProductsService {
         p_discount: 30
       }
     ];
+  }
+
+  getCartItems() {
+    return this.cartItems;
+  }
+
+
+  saveToCart(itemFromProduct: any) {
+    console.log(itemFromProduct);
+    this.cartItems.push(itemFromProduct);
   }
 }

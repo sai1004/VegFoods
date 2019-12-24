@@ -1,1 +1,5 @@
-<p>cart works!</p>
+<div *ngFor="let item of cartItems">
+  {{ item.id }}
+  {{ item.p_price | currency }}
+  <img src="{{ item.p_img }}" alt="product-img" class="product-img" />
+</div>
