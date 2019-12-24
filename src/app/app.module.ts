@@ -1,10 +1,6 @@
-import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+/* """""""""""""""""""""" Components """""""""""""""""""""" */
 
-import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { SharedModule } from "./shared/shared.module";
 import { BannerComponent } from "./components/banner/banner.component";
 import { NavComponent } from "./components/nav/nav.component";
 import { FooterComponent } from "./components/footer/footer.component";
@@ -23,11 +19,25 @@ import { ShopComponent } from "./pages/shop/shop.component";
 import { ShowCaseComponent } from "./components/show-case/show-case.component";
 import { ShowCaseImgsComponent } from "./components/show-case-imgs/show-case-imgs.component";
 import { SliderComponent } from "./components/slider/slider.component";
-import { SliderItemDirective } from "./components/slider/slider-item.directive";
 import { SingleProductPageComponent } from "./pages/single-product-page/single-product-page.component";
 
+/* """""""""""""""""""""" Modules """""""""""""""""""""" */
+
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { AppRoutingModule } from "./app-routing.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { SharedModule } from "./shared/shared.module";
+
+/* """""""""""""""""""""" Services """""""""""""""""""""" */
+
 import { OurProductsService } from "./components/our-products/our-products.service";
-import { CartService } from './pages/cart/cart.service';
+import { CartService } from "./pages/cart/cart.service";
+
+/* """""""""""""""""""""" Others """""""""""""""""""""" */
+
+import { SliderItemDirective } from "./components/slider/slider-item.directive";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +68,7 @@ import { CartService } from './pages/cart/cart.service';
     BrowserAnimationsModule,
     SharedModule
   ],
-  providers: [OurProductsService,CartService],
+  providers: [OurProductsService, CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
