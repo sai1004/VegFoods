@@ -20,7 +20,7 @@
               <mat-card-subtitle>{{ item.p_price | currency }}</mat-card-subtitle>
               <div class="overlay">
                 <button><mat-icon>menu</mat-icon></button>
-                <button>
+                <button (click)='addToCart()'>
                   <i class="fas fa-shopping-cart"></i>
                 </button>
                 <button><i class="far fa-heart"></i></button>

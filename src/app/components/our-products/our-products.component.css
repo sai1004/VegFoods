@@ -14,7 +14,7 @@ mat-card {
 }
 
 mat-card:hover {
-  box-shadow: 0px 2px 10px 2px rgb(240, 234, 234);
+  box-shadow: 1px 2px 10px 2px #82ae46;
 }
 
 mat-icon {
