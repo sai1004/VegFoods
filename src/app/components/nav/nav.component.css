@@ -3,9 +3,11 @@ section {
   right: 0;
   left: 0;
   width: 100%;
-  background-color: white;
-  color: black;
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+  background-color: #070707;
+  /* color: black; */
+  /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5);
+
   z-index: 9999;
 }
 
@@ -21,7 +23,8 @@ h3 {
 
 a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
+  color: white;
 }
 
 a:hover {
