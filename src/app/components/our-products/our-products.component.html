@@ -9,7 +9,7 @@
     </div>
 
     <div fxLayout="row wrap" Align="center" fxLayoutAlign="space-around center">
-      <ng-container *ngFor="let item of products">
+      <ng-container *ngFor="let item of products" let i = index>
         <div fxFlex="25" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50">
           <mat-card data-aos="fade-up">
             <div class="img-box">
@@ -20,7 +20,7 @@
               <mat-card-subtitle>{{ item.p_price | currency }}</mat-card-subtitle>
               <div class="overlay">
                 <button><mat-icon>menu</mat-icon></button>
-                <button (click)='addToCart()'>
+                <button (click)='addToCart(item)'>
                   <i class="fas fa-shopping-cart"></i>
                 </button>
                 <button><i class="far fa-heart"></i></button>
