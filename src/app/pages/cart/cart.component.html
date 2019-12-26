@@ -1,5 +1,25 @@
-<div *ngFor="let item of cartItems">
-  {{ item.id }}
-  {{ item.p_price | currency }}
-  <img src="{{ item.p_img }}" alt="product-img" class="product-img" />
+<div fxLayout="row wrap" fxLayoutAlign="space-around">
+  <div fxFlex="66" fxFlex.sm="100" flex-order="2">
+    <ng-container *ngFor="let item of cartItems">
+      <mat-card>
+        <div fxLayoutAlign="space-between center">
+          <div class="img-part">
+            <img src="{{ item.p_img }}" alt="product-img" class="product-img" />
+          </div>
+          <div class="details">
+            {{ item.id }}
+            {{ item.p_price | currency }}
+          </div>
+          <div class="remove-icon">
+            <mat-icon>delete</mat-icon>
+          </div>
+        </div>
+      </mat-card>
+    </ng-container>
+  </div>
+
+  <div fxFlex="30" fxFlex.sm="100" flex-order="1">
+    <mat-card> </mat-card>
+  </div>
+
 </div>
