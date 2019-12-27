@@ -37,3 +37,23 @@ a:hover {
 span:hover {
   cursor: pointer;
 }
+
+span i {
+  outline: none;
+
+}
+.cart {
+  background-color: #a7cb00;
+  padding: 20px;
+
+}
+
+a:first-child:default {
+  background-color: #a7cb00;
+  padding: 20px;
+}
+
+a:focus {
+  background-color: #a7cb00;
+  padding: 20px;
+}
