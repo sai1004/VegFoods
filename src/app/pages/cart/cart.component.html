@@ -1,24 +1,63 @@
-<div fxLayout="row wrap" fxLayoutAlign="space-around">
-  <div fxFlex="66" fxFlex.sm="100"  fxFlex.xs="100"  fxFlexOrder.sm="2" fxFlexOrder.xs="2">
-    <ng-container *ngFor="let item of cartItems">
+<section>
+  <div fxLayout="row wrap" fxLayoutAlign="space-around">
+    <div
+      fxFlex="66"
+      fxFlex.sm="100"
+      fxFlex.xs="100"
+      fxFlexOrder.sm="2"
+      fxFlexOrder.xs="2"
+    >
+      <ng-container *ngFor="let item of cartItems; let i = index">
+        <mat-card>
+          <div fxLayoutAlign="space-between center">
+            <div class="img-part">
+              <img
+                src="{{ item.p_img }}"
+                alt="product-img"
+                class="product-img"
+              />
+            </div>
+            <div class="details">
+              {{ item.id }}
+              {{ item.p_price | currency }}
+            </div>
+            <div class="remove-icon">
+              <mat-icon (click)="delete(i)">delete</mat-icon>
+            </div>
+          </div>
+        </mat-card>
+      </ng-container>
+    </div>
+
+    <div
+      fxFlex="30"
+      fxFlex.sm="100"
+      fxFlex.xs="100"
+      fxFlexOrder.sm="1"
+      fxFlexOrder.xs="1"
+    >
       <mat-card>
-        <div fxLayoutAlign="space-between center">
-          <div class="img-part">
-            <img src="{{ item.p_img }}" alt="product-img" class="product-img" />
+        <div fxLayout="row" fxLayoutAlign="space-around center">
+          <div fxFlex="50">
+            <h4>Bag Total</h4>
+            <h4>Bag Discount</h4>
+            <h4>Coupon Discount</h4>
+            <h4>Order Total</h4>
+            <h4>Delivery Charges</h4>
           </div>
-          <div class="details">
-            {{ item.id }}
-            {{ item.p_price | currency }}
-          </div>
-          <div class="remove-icon">
-            <mat-icon>delete</mat-icon>
+          <div fxFlex="50">
+            <p>$129</p>
+            <p>$100</p>
+            <p>$100</p>
+            <p>$100</p>
+            <p>$100</p>
+            <p>$100</p>
           </div>
         </div>
+        <div>
+          <button mat-button>Place Order</button>
+        </div>
       </mat-card>
-    </ng-container>
+    </div>
   </div>
-
-  <div fxFlex="30" fxFlex.sm="100"  fxFlex.xs="100"  fxFlexOrder.sm="1" fxFlexOrder.xs="1">
-    <mat-card> </mat-card>
-  </div>
-</div>
+</section>

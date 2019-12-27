@@ -4,4 +4,5 @@ export class Products {
   p_img: string;
   p_price: number;
   p_discount: number;
+  p_quantity:number;
 }

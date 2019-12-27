@@ -16,7 +16,17 @@
         <a routerLink="/contact">CONTACT</a>
         <div>
           <span routerLink="/cart"><i class="fas fa-shopping-cart"></i></span>
-          <span> [{{cartItems.length}}] </span>
+          <span> [{{ cartItems.length }}] </span>
+        </div>
+        <div>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <i class="far fa-user"></i>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Account</button>
+            <button mat-menu-item>Wish List</button>
+            <button mat-menu-item>Log Out</button>
+          </mat-menu>
         </div>
       </div>
     </div>

@@ -1,7 +1,22 @@
-.product-img{
-    height: 240px;
+section {
+  margin-top: 50px;
 }
-mat-card{
-    margin-bottom: 10px !important;
-    height: 250px;
+.product-img {
+  height: 240px;
+}
+mat-card {
+  margin-bottom: 10px !important;
+  height: 250px;
+}
+
+mat-icon {
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  background-color: #82ae46;
+  font-size: medium;
+  font-weight: 500;
+  width: 100%;
 }
