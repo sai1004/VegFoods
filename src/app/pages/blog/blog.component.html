@@ -1,1 +1,8 @@
-<p>blog works!</p>
+<section Align="center">
+  <div [attr.outage-count]="slider">
+    <span (click)="previous()"> < Previous</span>
+    <img [src]="slider" alt="img" height="300px" />
+    <span (click)="next()"> > Next</span>
+  </div>
+
+</section>

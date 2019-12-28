@@ -8,7 +8,7 @@ section {
   z-index: 9999;
 }
 
-mat-menu  mat-menu-item{
+mat-menu mat-menu-item {
   z-index: 9999;
 }
 
@@ -40,12 +40,10 @@ span:hover {
 
 span i {
   outline: none;
-
 }
 .cart {
   background-color: #a7cb00;
   padding: 20px;
-
 }
 
 a:first-child:default {
