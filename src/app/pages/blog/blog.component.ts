@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { url } from "inspector";
+ 
 
 @Component({
   selector: "app-blog",
@@ -43,6 +43,4 @@ export class BlogComponent implements OnInit {
 
     this.slider = this.images[this.num];
   }
-
- 
 }
