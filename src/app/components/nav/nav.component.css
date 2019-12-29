@@ -4,10 +4,11 @@ section {
   left: 0;
   width: 100%;
   background-color: #070707;
-  /* color: black; */
-  /* box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5); */
   box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+}
 
+mat-menu mat-menu-item {
   z-index: 9999;
 }
 
@@ -39,12 +40,10 @@ span:hover {
 
 span i {
   outline: none;
-
 }
 .cart {
   background-color: #a7cb00;
   padding: 20px;
-
 }
 
 a:first-child:default {
