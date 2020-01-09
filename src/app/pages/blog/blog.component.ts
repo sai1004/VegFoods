@@ -10,7 +10,7 @@ export class BlogComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  // images: string = "../../../assets/images/product-1.jpg";
+ 
 
   images: any[] = [
     "../../../assets/images/product-1.jpg",
