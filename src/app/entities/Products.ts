@@ -1,8 +1,8 @@
 export class Products {
   id: string;
-  p_name: string;
-  p_img: string;
-  p_price: number;
-  p_discount: number;
-  p_quantity: number;
+  name: string;
+  img: string;
+  price: number;
+  discount: number;
+  isStock: number;
 }

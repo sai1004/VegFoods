@@ -40,6 +40,7 @@ import { CartService } from "./pages/cart/cart.service";
 /* """""""""""""""""""""" Others """""""""""""""""""""" */
 
 import { SliderItemDirective } from "./components/slider/slider-item.directive";
+import { CameraComponent } from './components/camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { SliderItemDirective } from "./components/slider/slider-item.directive";
     ShowCaseImgsComponent,
     SliderComponent,
     SliderItemDirective,
-    SingleProductPageComponent
+    SingleProductPageComponent,
+    CameraComponent
   ],
   imports: [
     BrowserModule,

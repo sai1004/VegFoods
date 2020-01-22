@@ -2,7 +2,7 @@ import { Address } from "./Addrerss";
 import { Orders } from "./Orders";
 import { Img } from "./Img";
 
-export class Profile {
+export class Customer {
   id: string;
   name: string;
   mobile: number;
