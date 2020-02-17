@@ -5,6 +5,7 @@ export class Orders {
   id: string;
   orderCode: string;
   orderDate: Date;
+  quantity: number;
   products: Products = new Products();
   payment: Payment = new Payment();
 }

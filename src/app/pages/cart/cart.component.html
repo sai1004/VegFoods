@@ -20,6 +20,15 @@
             <div class="details">
               {{ item.id }}
               {{ item.p_price | currency }}
+
+              <mat-form-field>
+                <mat-label>Quantity</mat-label>
+                <mat-select>
+                  <mat-option *ngFor="let food of cartItems " [value]="food.value">
+                    {{food.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
             </div>
             <div class="remove-icon">
               <mat-icon (click)="delete(i)">delete</mat-icon>
